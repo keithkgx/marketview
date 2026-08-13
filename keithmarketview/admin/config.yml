@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/keithmarketview   # <-- change this
+  branch: main
+
+# If you deploy on Netlify, delete the two lines below — Netlify handles
+# login automatically. If you stick with GitHub Pages only, you need an
+# OAuth proxy; see the README for both options.
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -1,0 +1,14 @@
+title: Keith Market View
+description: Notes and views on markets, mostly commodities.
+author: Keith
+
+# Jekyll builds every markdown file in _posts/ into a page automatically.
+# You don't need to touch this file again once it's set up.
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# GitHub Pages builds Jekyll sites automatically on every push,
+# no build step or CI config needed.
+plugins:
+  - jekyll-feed
