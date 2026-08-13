@@ -3,6 +3,9 @@ backend:
   repo: keithkgx/marketview
   branch: main
 
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
 collections:
   - name: "posts"
     label: "Posts"
